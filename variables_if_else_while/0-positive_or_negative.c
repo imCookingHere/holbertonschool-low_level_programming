@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /*
@@ -5,13 +6,13 @@
  * Auth: Jack MacDonald <9902@holberstonstudents.com>
  */
 
-int main(void)
 /**
- * checks if number is negative, positive or 0 and prints: "n is positive,
- *                n is negative or n is zero.
+ * main - checks if number is negative, positive or 0 and prints: "n is
+ *               positive, n is negative or n is zero."
  *
  * Return: Always 0.
- */	
+ */
+int main(void)
 {
 	int n;
 
@@ -19,15 +20,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
 	{
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
 	if (n > 0)
 	{
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	}
 	if (n == 0)
 	{
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	}
 	return (0);
 }
