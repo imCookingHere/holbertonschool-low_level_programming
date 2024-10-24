@@ -11,11 +11,11 @@
  */
 int main(void)
 {
-        int nmbr = '0';
-        int nl = '\n';
+	int nmbr = '0';
+	int nl = '\n';
 
-        for (nmbr = '0'; nmbr <= '9'; nmbr++)
-        putchar(nmbr);
-        putchar(nl);
-        return (0);
+	for (nmbr = '0'; nmbr <= '9'; nmbr++)
+	putchar(nmbr);
+	putchar(nl);
+	return (0);
 }
