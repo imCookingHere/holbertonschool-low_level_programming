@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 5-sign.c: Prints +, 0 or - corrospoding to whether or not the
+ * print_sign - Prints +, 0 or - corrospoding to whether or not the
  * number is >, < or = to 0
  * @n: is the int to check
  * Return: 1 and prints + if the n is > zero
@@ -18,14 +18,20 @@
 	if (n < 0)
 	{
 		_putchar(minus);
-	} else if (n == 0)
+		return (-1);
+	}
+	if (n == 0)
+
 	{
 		_putchar(zero);
-	} else
+		return (0);
+	}
+
+	if (n > 0)
 	{
 		_putchar(plus);
+		return (1);
 	}
 
 	return (0);
-
 }
