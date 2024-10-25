@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * 24_hours - prints every minute of the day between
+ * jack_bauer - prints every minute of the day between
  * 00:00 to 23:59.
  */
 
