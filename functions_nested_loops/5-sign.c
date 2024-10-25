@@ -3,7 +3,10 @@
 /**
  * 5-sign.c: Prints +, 0 or - corrospoding to whether or not the
  * number is >, < or = to 0
- * @n: is number to check
+ * @n: is the int to check
+ * Return: 1 and prints + if the n is > zero
+ * 0 and prints 0 if n is zero
+ * -1 and prints - if n is < zero
  */
 
 	int print_sign(int n)
