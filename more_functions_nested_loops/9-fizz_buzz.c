@@ -30,7 +30,7 @@
 		{
 			printf("%d", a);
 		}
-		if (a < 99)
+		if (a <= 99)
 		{
 			printf(" ");
 		}
