@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include <stdio.h>
 
 /**
  * main - prints the numbers 1 to 100 followed by a new line
@@ -17,23 +17,24 @@
 		if (a % 3 == 0 && a % 5 == 0)
 		{
 			printf("FizzBuzz");
-			putchar(' ');
 		}
 		else if (a % 3 == 0)
 		{
 			printf("Fizz");
-			putchar(' ');
 		}
 		else if (a % 5 == 0)
 		{
 			printf("Buzz");
-			putchar(' ');
 		}
 		else
 		{
 			printf("%d", a);
-			putchar(' ');
+		}
+		if (a < 99)
+		{
+			printf(" ");
 		}
 	}
+	putchar('\n');
 	return (0);
 }
