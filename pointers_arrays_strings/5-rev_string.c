@@ -6,7 +6,8 @@
  *
  * Return: reverses the string passed in.
  */
-void print_rev(char *s)
+
+	void rev_string(char *s)
 {
 	int count = 0;
 
