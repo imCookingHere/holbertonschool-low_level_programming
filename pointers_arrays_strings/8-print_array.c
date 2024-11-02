@@ -17,5 +17,5 @@
 	a++;
 	count++;
 	}
-	_putchar('\n');
+	printf("\n");
 }
