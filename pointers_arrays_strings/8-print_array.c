@@ -16,7 +16,7 @@
 	if (count == n - 1)
 	{
 		printf("%d", *a);
-		count ++;
+		count++;
 	}
 	else
 	{
