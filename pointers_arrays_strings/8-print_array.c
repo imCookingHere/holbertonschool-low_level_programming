@@ -13,9 +13,17 @@
 
 	while (count < n)
 	{
-	printf("%d, ", *a);
-	a++;
-	count++;
+	if (count == n - 1)
+	{
+		printf("%d", *a);
+		count ++;
+	}
+	else
+	{
+		printf("%d, ", *a);
+		a++;
+		count++;
+	}
 	}
 	printf("\n");
 }
