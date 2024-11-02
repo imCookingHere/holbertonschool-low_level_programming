@@ -11,10 +11,20 @@
 
 	void puts2(char *str)
 {
+	int count = 0;
+	int length = 0;
+
 	while (*str != '\0')
+	{
+		length++;
+		str++;
+	}
+	str = str - length;
+	while (count < length)
 	{
 		_putchar(*str);
 		str = str + 2;
+		count = count + 2;
 	}
 	_putchar('\n');
 }
