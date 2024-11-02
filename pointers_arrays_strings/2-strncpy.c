@@ -18,7 +18,6 @@
 	{
 		dest[a] = src[a];
 		a++;
-		src++;
 	}
 	while (a < n)
 	{
