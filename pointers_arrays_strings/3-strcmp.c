@@ -26,11 +26,11 @@
 
 	if (ta1 > ta2)
 	{
-		return (-15);
+		return (-13);
 	}
 	else if (ta2 > ta1)
 	{
-		return (15);
+		return (13);
 	}
 	else
 	{
