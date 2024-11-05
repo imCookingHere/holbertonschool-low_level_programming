@@ -15,7 +15,7 @@
 	int i = 0;
 	int m = n;
 
-	while (i <= m)
+	while (i < m)
 	{
 		*s = b;
 		i++;
