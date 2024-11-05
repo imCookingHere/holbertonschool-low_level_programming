@@ -22,5 +22,11 @@
 		}
 		a++;
 	}
+	if (c == '\0')
+	{
+		char *locate = &s[a];
+
+		return (locate);
+	}
 	return (0);
 }
