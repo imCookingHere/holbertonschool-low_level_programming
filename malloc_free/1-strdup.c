@@ -15,7 +15,7 @@
 	int count = 0;
 	char *a = str;
 	char *p;
-	
+
 	if (str == NULL)
 	{
 		return (NULL);
@@ -25,7 +25,7 @@
 		len++;
 		a++;
 	}
-	p = malloc(len * sizeof(str));
+	p = malloc((len + 1) * sizeof(char));
 
 	while (count < len)
 	{
