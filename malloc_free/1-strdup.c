@@ -13,19 +13,22 @@
 {
 	int len = 0;
 	int count = 0;
-	char *a = str;
 	char *p;
 
-	if (str == 0)
+	if (str == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
-	while (*a != '\0')
+	while (str[len] != '\0')
 	{
 		len++;
-		a++;
 	}
 	p = malloc((len + 1) * sizeof(char));
+
+	if (p == NULL)
+	{
+		return (NULL);
+	}
 
 	while (count < len)
 	{
