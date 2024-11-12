@@ -16,11 +16,11 @@
 
 	if (s1 == NULL)
 	{
-		s1 = " ";
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		s2 = " ";
+		s2 = "";
 	}
 	while (s1[len1] != '\0')
 	{
@@ -48,7 +48,6 @@
 		count1++;
 		count2++;
 	}
-	count2--;
 	p[count1] = '\0';
 	return (p);
 }
