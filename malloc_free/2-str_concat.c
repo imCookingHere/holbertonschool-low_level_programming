@@ -11,10 +11,17 @@
 
 	char *str_concat(char *s1, char *s2)
 {
-	int count1, count2, len1, len2 = 0;
+	int count1 = 0;
+	int count2 = 0;
+	int len1 = 0;
+	int len2 = 0;
 	char *p;
 
-	if (s1 || s2 == NULL)
+	if (s1 == NULL)
+	{
+		return (NULL);
+	}
+	if (s2 == NULL)
 	{
 		return (NULL);
 	}
@@ -44,5 +51,6 @@
 		count1++;
 		count2++;
 	}
+	p[count1] = '\0';
 	return (p);
 }
