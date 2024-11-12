@@ -16,7 +16,7 @@
 	unsigned int i;
 
 	s = malloc((size + 1) * sizeof(char));
-	if (s == 0)
+	if (s == 1)
 	{
 		return (0);
 	}
