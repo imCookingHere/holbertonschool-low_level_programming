@@ -16,9 +16,9 @@
 	unsigned int i;
 
 	s = malloc((size + 1) * sizeof(char));
-	if (s == 1)
+	if (s == 0)
 	{
-		return (0);
+		return (NULL);
 	}
 	i = 0;
 	while (i < size)
