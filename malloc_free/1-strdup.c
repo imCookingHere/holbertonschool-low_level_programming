@@ -32,6 +32,6 @@
 		p[count] = str[count];
 		count++;
 	}
+	p[count] = '\0';
 	return (p);
-	free(p);
 }
