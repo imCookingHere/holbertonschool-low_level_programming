@@ -16,9 +16,9 @@
 	char *a = str;
 	char *p;
 
-	if (str == NULL)
+	if (str == 0)
 	{
-		return (NULL);
+		return (0);
 	}
 	while (*a != '\0')
 	{
