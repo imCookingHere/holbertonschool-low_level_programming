@@ -15,7 +15,7 @@
 	char *s;
 	unsigned int i;
 
-	s = malloc((size + 1) * sizeof(*s));
+	s = malloc(size * sizeof(*s));
 	if (size == 0)
 	{
 		return (0);
