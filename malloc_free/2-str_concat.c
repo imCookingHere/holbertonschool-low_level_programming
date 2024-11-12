@@ -48,6 +48,7 @@
 		count1++;
 		count2++;
 	}
+	count2--;
 	p[count1] = '\0';
 	return (p);
 }
