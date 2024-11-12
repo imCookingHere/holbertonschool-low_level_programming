@@ -15,7 +15,11 @@
 	int count = 0;
 	char *a = str;
 	char *p;
-
+	
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	while (*a != '\0')
 	{
 		len++;
@@ -23,10 +27,6 @@
 	}
 	p = malloc(len * sizeof(str));
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	while (count < len)
 	{
 		p[count] = str[count];
