@@ -5,7 +5,8 @@
  * _strdup - Duplicates a string.
  * @str: The string to duplicate.
  *
- * Return: A pointer to the newly allocated copy of the string, or NULL on failure.
+ * Return: A pointer to the newly allocated copy of the string, or NULL on
+ * failure.
  */
 char *_strdup(char *str)
 {
