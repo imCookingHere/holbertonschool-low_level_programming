@@ -1,6 +1,6 @@
 #include "3-calc.h"
-#include <string.h>
 #include <stddef.h>
+#include <string.h>
 
 /**
  * get_op_func - Selects the correct function to perform the operation
@@ -21,16 +21,13 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	/* Check that the operator is a single character */
-	if (strlen(s) != 1)
-	return (NULL);
-
 	while (ops[i].op != NULL)
 	{
-	if (*s == *(ops[i].op))
+	/* Compare the entire string to ensure it matches a valid operator */
+	if (strcmp(s, ops[i].op) == 0)
 	return (ops[i].f);
 	i++;
 	}
 
-	return (NULL);
+	return (NULL); /* Return NULL if no valid operator is found */
 }
