@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <string.h>
 #include <stddef.h>
 
 /**
@@ -20,11 +21,16 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
+	/* Check that the operator is a single character */
+	if (strlen(s) != 1)
+	return (NULL);
+
 	while (ops[i].op != NULL)
 	{
 	if (*s == *(ops[i].op))
 	return (ops[i].f);
 	i++;
 	}
+
 	return (NULL);
 }
